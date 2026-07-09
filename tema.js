@@ -112,24 +112,36 @@ function renderFlow() {
   });
   row.innerHTML = html;
 }
+
 let flowInterval = null;
-function selectFlow(idx) {
-  if (flowInterval) { clearInterval(flowInterval); flowInterval = null; }
+
+function selectFlow(idx, fromAnimation = false) {
+  // Solo detiene la animación si el usuario clickeó manualmente
+  if (!fromAnimation && flowInterval) { 
+    clearInterval(flowInterval); 
+    flowInterval = null; 
+  }
   document.querySelectorAll('.flow-step').forEach((s,i) => {
     s.classList.toggle('active', i === idx);
   });
   const item = flowData[idx];
   document.getElementById('flow-detail').innerHTML = `<h4>${item.title}</h4><p>${item.desc}</p>`;
 }
+
 function playFlow() {
+  // Detener animación anterior si existe
   if (flowInterval) { clearInterval(flowInterval); flowInterval = null; }
   let i = 0;
+  selectFlow(0, true);  // true = viene de la animación, no detener
   flowInterval = setInterval(() => {
     i++;
-    if (i >= flowData.length) { clearInterval(flowInterval); flowInterval = null; return; }
-    selectFlow(i);
+    if (i >= flowData.length) { 
+      clearInterval(flowInterval); 
+      flowInterval = null; 
+      return; 
+    }
+    selectFlow(i, true);  // true = viene de la animación, no detener
   }, 1200);
-  selectFlow(0);
 }
 
 renderIcono();
