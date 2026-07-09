@@ -124,12 +124,12 @@ function selectFlow(idx) {
 function playFlow() {
   if (flowInterval) { clearInterval(flowInterval); flowInterval = null; }
   let i = 0;
-  selectFlow(0);
   flowInterval = setInterval(() => {
     i++;
     if (i >= flowData.length) { clearInterval(flowInterval); flowInterval = null; return; }
     selectFlow(i);
   }, 1200);
+  selectFlow(0);
 }
 
 renderIcono();
