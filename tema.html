@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tema Asignado - Requisitos Generales NIA 300</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="site-header-inner">
+<a class="brand" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg> NIA 220 &amp; NIA 300</a>
+<span class="crumb"><a href="index.html">Inicio</a> / Tema Asignado</span>
+</div>
+</header>
+
+<main>
+<div class="page-title">
+<h1>Tema: Requisitos Generales (NIA 300)</h1>
+<p>Aborda los requerimientos clave del auditor durante la planificacion segun la NIA 300.</p>
+</div>
+
+<div class="card">
+  <h2>Esquema Iconografico - Requisitos Generales</h2>
+  <div class="icono-grid" id="icono-grid"></div>
+  <div class="icono-detail-panel" id="icono-detail">
+    <h4 id="icono-detail-title"></h4>
+    <p id="icono-detail-desc"></p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Linea de Tiempo - Planificacion de Auditoria</h2>
+  <div class="timeline-wrap">
+    <div class="timeline-track"></div>
+    <div class="timeline-progress" id="timeline-progress"></div>
+    <div class="timeline-nodes" id="timeline-nodes"></div>
+  </div>
+  <div class="timeline-detail" id="timeline-detail">
+    
+  </div>
+</div>
+
+<div class="card">
+  <h2>Diagrama de Flujo - Proceso de Planificacion</h2>
+  <div class="flow-wrap">
+    <div class="flow-row" id="flow-row"></div>
+    <button class="flow-play-btn" onclick="playFlow()"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Reproducir flujo</button>
+    <div class="flow-detail" id="flow-detail">
+      
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:1.5rem">
+<a class="back-btn" href="index.html" style="text-decoration:none;display:inline-block">&larr; Volver a Inicio</a>
+</div>
+</main>
+<script src="tema.js"></script>
+</body>
+</html>

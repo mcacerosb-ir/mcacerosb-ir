@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario - NIA 220</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="site-header-inner">
+<a class="brand" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg> NIA 220 &amp; NIA 300</a>
+<span class="crumb"><a href="index.html">Inicio</a> / <a href="nia220.html">NIA 220</a> / Cuestionario</span>
+</div>
+</header>
+
+<main>
+<div class="page-title">
+<h1>Cuestionario &mdash; NIA 220</h1>
+<p>10 preguntas para evaluar tu comprension de la Gestion de la Calidad.</p>
+</div>
+
+<div class="card">
+<div id="quiz-220"></div>
+<button class="quiz-submit" onclick="checkQuiz('220')">Calificar</button>
+<div class="quiz-result" id="result-220"></div>
+</div>
+
+<div style="margin-top:1.5rem">
+<a class="back-btn" href="nia220.html" style="text-decoration:none;display:inline-block">&larr; Volver a NIA 220</a>
+</div>
+</main>
+
+<script src="quiz.js"></script>
+<script>
+var qs={};
+qs["220"]=[
+{q:"1. ¿En que se enfoca principalmente la NIA 220?",o:["En los procedimientos de auditoria de saldos","En el comportamiento, la etica y la responsabilidad del equipo de auditoria","En la planificacion del encargo","En la materialidad"],a:1},
+{q:"2. ¿Sobre que figura recae el peso completo de la NIA 220?",o:["El equipo junior","El Socio del Encargo","El cliente","El comite de etica"],a:1},
+{q:"3. ¿Que debe crear el Socio del Encargo como su responsabilidad principal?",o:["Un presupuesto ajustado","Una cultura interna donde la calidad sea la prioridad sobre los intereses comerciales","Un plan de marketing","Un manual de procedimientos"],a:1},
+{q:"4. ¿Que debe confirmar el socio respecto a los requisitos eticos e independencia?",o:["Que el equipo trabaje horas extra","Que no existan conflictos de interes ni relaciones con el cliente que comprometan la objetividad","Que el cliente pague a tiempo","Que el informe se entregue rapido"],a:1},
+{q:"5. ¿Que exige el escepticismo profesional?",o:["Confiar en la gerencia por defecto","Mantener una mente inquisitiva y evaluar criticamente las evidencias","Delegar todo al equipo junior","Aceptar las respuestas de la administracion sin cuestionarlas"],a:1},
+{q:"6. Segun el escepticismo profesional, ¿como debe tratar el equipo las respuestas de la administracion?",o:["Aceptarlas sin revision","Cuestionarlas y evaluarlas criticamente","Ignorarlas","Delegarlas al cliente"],a:1},
+{q:"7. ¿Que implica la Direccion, Supervision y Revision?",o:["Que el socio coordine el trabajo, supervise el avance y revise las areas mas complejas antes del informe final","Que el cliente supervise al equipo","Que solo se revisen los estados financieros","Que se elimine la revision final"],a:0},
+{q:"8. ¿Que debe hacer el socio cuando surgen temas dificiles u opiniones divididas?",o:["Ignorarlos","Realizar consultas con otros expertos","Delegar la decision al cliente","Finalizar el informe sin resolverlos"],a:1},
+{q:"9. Segun la NIA 220, ¿que debe primar sobre los intereses comerciales de la firma?",o:["Los plazos de entrega","La calidad del trabajo","El costo del encargo","La opinion del cliente"],a:1},
+{q:"10. ¿Que busca garantizar en ultima instancia la NIA 220?",o:["Que el cliente este satisfecho","Que el informe emitido por el equipo de auditoria sea el adecuado","Que se reduzcan los costos","Que se acorten los plazos"],a:1}
+];
+renderQuiz("220");
+</script>
+</body>
+</html>

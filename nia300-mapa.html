@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Mental - NIA 300</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="site-header-inner">
+<a class="brand" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg> NIA 220 &amp; NIA 300</a>
+<span class="crumb"><a href="index.html">Inicio</a> / <a href="nia300.html">NIA 300</a> / Mapa Mental</span>
+</div>
+</header>
+
+<main>
+<div class="page-title">
+<h1>Mapa Mental Interactivo &mdash; NIA 300</h1>
+</div>
+
+<div class="card">
+  <div class="mm-container" id="mm-canvas-300">
+    <div class="mm-legend">
+      <div class="mm-legend-item"><div class="mm-legend-dot" style="background:#0f766e"></div>Central</div>
+      <div class="mm-legend-item"><div class="mm-legend-dot" style="background:#0d9488"></div>Rama principal</div>
+      <div class="mm-legend-item"><div class="mm-legend-dot" style="background:#2dd4bf"></div>Subrama</div>
+    </div>
+    <div class="mm-controls">
+      <button class="mm-ctrl-btn" onclick="mmZoom('300',1.2)">+</button>
+      <button class="mm-ctrl-btn" onclick="mmZoom('300',0.8)">&minus;</button>
+      <button class="mm-ctrl-btn" onclick="mmReset('300')" title="Reset">&#x27F2;</button>
+    </div>
+    <svg class="mm-svg" id="mm-svg-300" viewBox="0 0 900 600" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <filter id="mm-shadow-300" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.1)"/>
+        </filter>
+      </defs>
+      <g id="mm-viewport-300"></g>
+    </svg>
+    <div class="mm-detail" id="mm-detail-300">
+      <button class="close-btn" onclick="closeDetail('300')">&times;</button>
+      <h4 id="mm-detail-title-300"></h4>
+      <p id="mm-detail-desc-300"></p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:1.5rem">
+<a class="back-btn" href="nia300.html" style="text-decoration:none;display:inline-block">&larr; Volver a NIA 300</a>
+</div>
+</main>
+
+<script src="mindmap.js"></script>
+<script>
+const mmData = {
+  "300": {
+    center: { text: "NIA 300\nPlanificacion", desc: "Establece los requisitos para planificar la auditoria de estados financieros. Es un proceso continuo e interactivo que abarca desde la aceptacion del encargo hasta la emision del informe.", x: 450, y: 300, level: 0, color: "#0f766e" },
+    branches: [
+      {
+        text: "Estrategia\nGlobal", desc: "Establece el alcance, el momento y la direccion de la auditoria. Define los recursos necesarios y el enfoque general para abordar los riesgos identificados.",
+        x: 220, y: 130, level: 1, color: "#0d9488",
+        sub: [
+          { text: "Alcance", desc: "Definir que se va a auditar, que informes se emitiran y que criterios se aplicaran para evaluar los estados financieros.", x: 90, y: 60, level: 2, color: "#2dd4bf" },
+          { text: "Direccion", desc: "Establecer la orientacion general del trabajo, incluyendo la naturaleza, el momento y la extension de los procedimientos.", x: 90, y: 200, level: 2, color: "#2dd4bf" }
+        ]
+      },
+      {
+        text: "Plan de\nAuditoria", desc: "Documento que detalla los procedimientos de auditoria que se llevaran a cabo para obtener evidencia suficiente y apropiada.",
+        x: 680, y: 130, level: 1, color: "#0d9488",
+        sub: [
+          { text: "Procedimientos", desc: "Definir las pruebas de control, procedimientos sustantivos y analiticos que se ejecutaran durante la auditoria.", x: 810, y: 60, level: 2, color: "#2dd4bf" },
+          { text: "Riesgo aceptable", desc: "Determinar el nivel de riesgo de auditoria aceptable y como se distribuye entre riesgo inherente, de control y de deteccion.", x: 810, y: 200, level: 2, color: "#2dd4bf" }
+        ]
+      },
+      {
+        text: "Documentacion", desc: "El auditor debe documentar la estrategia global, el plan de auditoria y cualquier cambio significativo realizado durante el encargo.",
+        x: 680, y: 470, level: 1, color: "#0d9488",
+        sub: [
+          { text: "Estrategia", desc: "Documentar las decisiones clave sobre el alcance, momento y direccion de la auditoria, incluyendo la respuesta a riesgos significativos.", x: 810, y: 400, level: 2, color: "#2dd4bf" },
+          { text: "Cambios", desc: "Registrar las modificaciones a la estrategia y al plan cuando surgen nuevas circunstancias o riesgos durante la ejecucion.", x: 810, y: 540, level: 2, color: "#2dd4bf" }
+        ]
+      },
+      {
+        text: "Actividades\nClave", desc: "Actividades fundamentales que el auditor debe realizar durante la planificacion para identificar y evaluar riesgos de manera efectiva.",
+        x: 220, y: 470, level: 1, color: "#0d9488",
+        sub: [
+          { text: "Entender\ncliente", desc: "Obtener conocimiento de la entidad, su entorno, el marco regulatorio y el sistema de control interno.", x: 90, y: 400, level: 2, color: "#2dd4bf" },
+          { text: "Identificar\nriesgos", desc: "Detectar eventos, condiciones y actividades que puedan generar errores materiales en los estados financieros.", x: 90, y: 540, level: 2, color: "#2dd4bf" }
+        ]
+      },
+      {
+        text: "Proceso\nContinuo e\nInteractivo", desc: "La planificacion no es un evento unico. El auditor debe actualizar la estrategia y el plan a medida que obtiene nueva informacion.",
+        x: 450, y: 520, level: 1, color: "#0f766e",
+        sub: [
+          { text: "Analisis\nanalitico", desc: "Realizar analisis preliminares de tendencias, relaciones inusuales y variaciones para identificar areas de mayor riesgo.", x: 310, y: 580, level: 2, color: "#2dd4bf" },
+          { text: "Actualizar\nplan", desc: "Modificar la estrategia y el plan de auditoria segun los hallazgos durante la ejecucion del trabajo.", x: 590, y: 580, level: 2, color: "#2dd4bf" }
+        ]
+      }
+    ]
+  }
+};
+const mmState = { "300": { scale: 1, tx: 0, ty: 0 } };
+renderMindMap("300");
+setupPanZoom("300");
+</script>
+</body>
+</html>
