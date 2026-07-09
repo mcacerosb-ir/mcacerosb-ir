@@ -5,17 +5,17 @@ const iconoData = [
   { id:2, title:"Identificar Riesgos", short:"Detectar errores materiales potenciales",
     desc:"Se deben identificar los riesgos de errores materiales a traves del entendimiento de la entidad y su entorno. Esto incluye riesgos inherentes y de control, considerando fraudes, errores y circunstancias especiales que puedan afectar la presentacion de los estados financieros." },
   { id:3, title:"Determinar Materialidad", short:"Definir importancia relativa",
-    desc:"La materialidad debe establecerse en la planificacion para determinar la naturaleza, momento y extension de los procedimientos de auditoria. Se define considerando tanto la cuantia como la naturaleza de los errores que podrian influir en las decisiones de los usuarios." },
-  { id:4, title:"Asignar Recursos", short:"Personal, tiempo y tecnologia",
-    desc:"El auditor debe asignar los recursos humanos, tecnologicos y de tiempo necesarios para ejecutar la auditoria con la calidad requerida, considerando la experiencia del equipo y la complejidad del encargo." },
-  { id:5, title:"Definir Estrategia", short:"Alcance, momento y direccion",
-    desc:"La estrategia global de auditoria establece el alcance, momento y direccion del trabajo, y sirve de guia para desarrollar el plan de auditoria detallado." },
+    desc:"La materialidad debe establecerse en la planificación para determinar la naturaleza, momento y extension de los procedimientos de auditoría. Se define considerando tanto la cuantia como la naturaleza de los errores que podrian influir en las decisiones de los usuarios." },
+  { id:4, title:"Asignar Recursos", short:"Personal, tiempo y tecnología",
+    desc:"El auditor debe asignar los recursos humanos, tecnologicos y de tiempo necesarios para ejecutar la auditoría con la calidad requerida, considerando la experiencia del equipo y la complejidad del encargo." },
+  { id:5, title:"Definir Estrategia", short:"Alcance, momento y dirección",
+    desc:"La estrategia global de auditoría establece el alcance, momento y dirección del trabajo, y sirve de guia para desarrollar el plan de auditoría detallado." },
   { id:6, title:"Documentar", short:"Registrar decisiones y cambios",
-    desc:"El auditor debe documentar la estrategia global de auditoria, el plan de auditoria y cualquier cambio significativo realizado durante el desarrollo del encargo. La documentacion debe ser suficiente para permitir la comprension del trabajo realizado." },
-  { id:7, title:"Estrategia Global", short:"Alcance, momento y direccion",
-    desc:"La estrategia global establece el alcance, el momento y la direccion de la auditoria. Define los recursos necesarios, el enfoque general y como se abordaran los riesgos identificados a nivel de estados financieros." },
-  { id:8, title:"Actualizacion Continua", short:"Modificar segun nueva informacion",
-    desc:"La planificacion es un proceso continuo e interactivo. El auditor debe actualizar la estrategia y el plan de auditoria a medida que obtiene nueva informacion durante la ejecucion del trabajo, adaptando el enfoque segun sea necesario." }
+    desc:"El auditor debe documentar la estrategia global de auditoría, el plan de auditoría y cualquier cambio significativo realizado durante el desarrollo del encargo. La documentación debe ser suficiente para permitir la comprensión del trabajo realizado." },
+  { id:7, title:"Estrategia Global", short:"Alcance, momento y dirección",
+    desc:"La estrategia global establece el alcance, el momento y la dirección de la auditoría. Define los recursos necesarios, el enfoque general y como se abordaran los riesgos identificados a nivel de estados financieros." },
+  { id:8, title:"Actualizacion Continua", short:"Modificar según nueva información",
+    desc:"La planificación es un proceso continuo e interactivo. El auditor debe actualizar la estrategia y el plan de auditoría a medida que obtiene nueva información durante la ejecución del trabajo, adaptando el enfoque según sea necesario." }
 ];
 
 const icons = {
@@ -54,18 +54,18 @@ function selectIcono(id) {
 
 /* ========== LINEA DE TIEMPO ========== */
 const timelineData = [
-  { step:1, label:"Actividades previas", title:"Actividades previas a la planificacion",
-    desc:"Evaluar la continuidad del cliente, verificar etica e independencia, revisar terminos del encargo y determinar si se cuenta con la competencia y los recursos necesarios para realizar la auditoria." },
+  { step:1, label:"Actividades previas", title:"Actividades previas a la planificación",
+    desc:"Evaluar la continuidad del cliente, verificar ética e independencia, revisar terminos del encargo y determinar si se cuenta con la competencia y los recursos necesarios para realizar la auditoría." },
   { step:2, label:"Estrategia global", title:"Definir la estrategia global",
-    desc:"Establecer el alcance, el momento y la direccion de la auditoria. Identificar las caracteristicas del encargo, los informes a emitir, los criterios aplicables y los factores que determinan el enfoque de auditoria." },
-  { step:3, label:"Plan de auditoria", title:"Desarrollar el plan de auditoria",
-    desc:"Detallar los procedimientos de auditoria que se llevaran a cabo para obtener evidencia suficiente y apropiada. Incluye la asignacion de recursos, la calendarizacion y la definicion de procedimientos especificos." },
+    desc:"Establecer el alcance, el momento y la dirección de la auditoría. Identificar las características del encargo, los informes a emitir, los criterios aplicables y los factores que determinan el enfoque de auditoría." },
+  { step:3, label:"Plan de auditoría", title:"Desarrollar el plan de auditoría",
+    desc:"Detallar los procedimientos de auditoría que se llevaran a cabo para obtener evidencia suficiente y apropiada. Incluye la asignación de recursos, la calendarización y la definicion de procedimientos especificos." },
   { step:4, label:"Evaluar riesgos", title:"Evaluar riesgos de errores materiales",
     desc:"Identificar y evaluar los riesgos de errores materiales a nivel de estados financieros y a nivel de aserciones. Considerar riesgos inherentes, de control y el riesgo de fraude." },
   { step:5, label:"Materialidad", title:"Determinar la materialidad",
-    desc:"Definir los umbrales de materialidad para los estados financieros en su conjunto, asi como los niveles de materialidad para clases de transacciones, saldos de cuentas y revelaciones especificas." },
+    desc:"Definir los umbrales de materialidad para los estados financieros en su conjunto, asi como los niveles de materialidad para clases de transacciones, saldos de cuentas y revelaciones específicas." },
   { step:6, label:"Documentar y actualizar", title:"Documentar y actualizar el plan",
-    desc:"Documentar la estrategia y el plan de auditoria, y modificar ambos durante la ejecucion si surgen nuevos riesgos o circunstancias que requieran ajustar el enfoque inicial." }
+    desc:"Documentar la estrategia y el plan de auditoría, y modificar ambos durante la ejecución si surgen nuevos riesgos o circunstancias que requieran ajustar el enfoque inicial." }
 ];
 
 function renderTimeline() {
@@ -90,17 +90,17 @@ function selectTimeline(idx) {
 /* ========== DIAGRAMA DE FLUJO ========== */
 const flowData = [
   { id:1, label:"Entender cliente", title:"Entender al cliente y su entorno",
-    desc:"Obtener conocimiento de la entidad, su entorno, el marco regulatorio aplicable y el sistema de control interno. Esto es fundamental para identificar areas de riesgo." },
+    desc:"Obtener conocimiento de la entidad, su entorno, el marco regulatorio aplicable y el sistema de control interno. Esto es fundamental para identificar áreas de riesgo." },
   { id:2, label:"Identificar riesgos", title:"Identificar riesgos de errores materiales",
     desc:"Basado en el entendimiento del cliente, detectar eventos, condiciones y actividades que puedan generar errores materiales en los estados financieros." },
   { id:3, label:"Materialidad", title:"Determinar materialidad y umbral",
-    desc:"Establecer la importancia relativa que determinara el enfoque, la extension y la naturaleza de los procedimientos de auditoria a realizar." },
+    desc:"Establecer la importancia relativa que determinara el enfoque, la extension y la naturaleza de los procedimientos de auditoría a realizar." },
   { id:4, label:"Estrategia global", title:"Definir estrategia global",
-    desc:"Establecer el alcance, momento y direccion de la auditoria, considerando los riesgos identificados y los recursos disponibles." },
-  { id:5, label:"Plan auditoria", title:"Desarrollar plan de auditoria",
-    desc:"Detallar los procedimientos de auditoria, asignar recursos y establecer la calendarizacion del trabajo." },
-  { id:6, label:"Ejecutar", title:"Ejecutar la auditoria",
-    desc:"Implementar el plan de auditoria, realizar los procedimientos definidos, documentar los hallazgos y actualizar el plan segun sea necesario." }
+    desc:"Establecer el alcance, momento y dirección de la auditoría, considerando los riesgos identificados y los recursos disponibles." },
+  { id:5, label:"Plan auditoría", title:"Desarrollar plan de auditoría",
+    desc:"Detallar los procedimientos de auditoría, asignar recursos y establecer la calendarización del trabajo." },
+  { id:6, label:"Ejecutar", title:"Ejecutar la auditoría",
+    desc:"Implementar el plan de auditoría, realizar los procedimientos definidos, documentar los hallazgos y actualizar el plan según sea necesario." }
 ];
 
 function renderFlow() {
@@ -112,35 +112,23 @@ function renderFlow() {
   });
   row.innerHTML = html;
 }
-
 let flowInterval = null;
-
-function selectFlow(idx, fromAnimation = false) {
-  // Solo detiene la animación si el usuario clickeó manualmente
-  if (!fromAnimation && flowInterval) { 
-    clearInterval(flowInterval); 
-    flowInterval = null; 
-  }
+function selectFlow(idx) {
+  if (flowInterval) { clearInterval(flowInterval); flowInterval = null; }
   document.querySelectorAll('.flow-step').forEach((s,i) => {
     s.classList.toggle('active', i === idx);
   });
   const item = flowData[idx];
   document.getElementById('flow-detail').innerHTML = `<h4>${item.title}</h4><p>${item.desc}</p>`;
 }
-
 function playFlow() {
-  // Detener animación anterior si existe
   if (flowInterval) { clearInterval(flowInterval); flowInterval = null; }
   let i = 0;
-  selectFlow(0, true);  // true = viene de la animación, no detener
+  selectFlow(0);
   flowInterval = setInterval(() => {
     i++;
-    if (i >= flowData.length) { 
-      clearInterval(flowInterval); 
-      flowInterval = null; 
-      return; 
-    }
-    selectFlow(i, true);  // true = viene de la animación, no detener
+    if (i >= flowData.length) { clearInterval(flowInterval); flowInterval = null; return; }
+    selectFlow(i);
   }, 1200);
 }
 
